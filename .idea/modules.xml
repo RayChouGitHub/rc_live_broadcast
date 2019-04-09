@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../compute-service/compute-service.iml" filepath="$PROJECT_DIR$/../compute-service/compute-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast.iml" filepath="$PROJECT_DIR$/rc_live_broadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_config_client/rc_live_broadcast_config_client.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_config_client/rc_live_broadcast_config_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_config_server/rc_live_broadcast_config_server.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_config_server/rc_live_broadcast_config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_eureka_server/rc_live_broadcast_eureka_server.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_eureka_server/rc_live_broadcast_eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_eureka_service/rc_live_broadcast_eureka_service.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_eureka_service/rc_live_broadcast_eureka_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_feign/rc_live_broadcast_feign.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_feign/rc_live_broadcast_feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_ribbon/rc_live_broadcast_ribbon.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_ribbon/rc_live_broadcast_ribbon.iml" />
+    </modules>
+  </component>
+</project>
