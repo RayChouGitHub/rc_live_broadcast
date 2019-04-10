@@ -90,6 +90,6 @@
         <module>rc_live_broadcast_ribbon</module>
         <module>rc_live_broadcast_config_server</module>
         <module>rc_live_broadcast_config_client</module>
+        <module>rc_live_broadcast_zuul</module>
     </modules>
-
 </project>

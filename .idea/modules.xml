@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_eureka_service/rc_live_broadcast_eureka_service.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_eureka_service/rc_live_broadcast_eureka_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_feign/rc_live_broadcast_feign.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_feign/rc_live_broadcast_feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_ribbon/rc_live_broadcast_ribbon.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_ribbon/rc_live_broadcast_ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_zuul/rc_live_broadcast_zuul.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_zuul/rc_live_broadcast_zuul.iml" />
     </modules>
   </component>
 </project>
