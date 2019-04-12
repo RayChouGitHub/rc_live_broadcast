@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/../compute-service/compute-service.iml" filepath="$PROJECT_DIR$/../compute-service/compute-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast.iml" filepath="$PROJECT_DIR$/rc_live_broadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_admin_client/rc_live_broadcast_admin_client.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_admin_client/rc_live_broadcast_admin_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_admin_server/rc_live_broadcast_admin_server.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_admin_server/rc_live_broadcast_admin_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_config_client/rc_live_broadcast_config_client.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_config_client/rc_live_broadcast_config_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_config_server/rc_live_broadcast_config_server.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_config_server/rc_live_broadcast_config_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rc_live_broadcast_eureka_server/rc_live_broadcast_eureka_server.iml" filepath="$PROJECT_DIR$/rc_live_broadcast_eureka_server/rc_live_broadcast_eureka_server.iml" />

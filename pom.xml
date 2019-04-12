@@ -30,6 +30,11 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -91,5 +96,7 @@
         <module>rc_live_broadcast_config_server</module>
         <module>rc_live_broadcast_config_client</module>
         <module>rc_live_broadcast_zuul</module>
+        <module>rc_live_broadcast_admin_server</module>
+        <module>rc_live_broadcast_admin_client</module>
     </modules>
 </project>
