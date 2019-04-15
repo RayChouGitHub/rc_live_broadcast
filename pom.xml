@@ -98,5 +98,7 @@
         <module>rc_live_broadcast_zuul</module>
         <module>rc_live_broadcast_admin_server</module>
         <module>rc_live_broadcast_admin_client</module>
+        <module>rc_live_broadcast_cloud_account</module>
+        <module>rc_live_broadcast_cloud_customer</module>
     </modules>
 </project>
