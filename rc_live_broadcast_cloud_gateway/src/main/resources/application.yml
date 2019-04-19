@@ -1,0 +1,69 @@
+spring:
+  application:
+    name: rc_live_broadcast_cloud_gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: service_compute
+          uri: lb://RC-LIVE-BROADCAST-EUREKA-SERVICE
+          order: 0
+          predicates:
+            - Path=/compute/**
+          filters:
+            - StripPrefix=1
+            - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@remoteAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 5
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+      default-filters:
+        - Elapsed=true
+  security:
+    user:
+      name: client
+      password: client
+  rabbitmq:
+    host: 47.102.154.169
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: 47.102.154.169
+    port: 6379
+    database: 0
+    password: guest
+server:
+  port: 5558
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+    lease-expiration-duration-in-seconds: 10
+    health-check-url-path: /actuator/health/
+    metadata-map:
+      user:
+        name: ${spring.security.user.name}
+        password: ${spring.security.user.password}
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+    com.windmt.filter: debug

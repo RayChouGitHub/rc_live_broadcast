@@ -27,7 +27,7 @@ public class CustomerController {
 
     @GetMapping("/{id}/account")
     public Flux<Account> getAllAccounts(@PathVariable String id){
-        return null;
+        return webClientBuilder.baseUrl("http://rc-live-broadcast-cloud-account/account").build().get().uri("/customer/"+id).retrieve().bodyToFlux(Account.class);
     }
 
     @GetMapping("")

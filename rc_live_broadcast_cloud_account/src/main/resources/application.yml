@@ -1,9 +1,41 @@
 spring:
   application:
     name: rc-live-broadcast-cloud-account
+  security:
+    user:
+      name: client
+      password: client
+  rabbitmq:
+    host: 47.102.154.169
+    port: 5672
+    username: guest
+    password: guest
+  data:
+    mongodb:
+      uri: mongodb://guest:guest@47.102.154.169:27017/rc_live_broadcast_mongo #mongodb:/用户名:密码@IP:端口/数据库名称
 server:
-  port: 8100
+  port: 5556
 eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+    lease-expiration-duration-in-seconds: 10
+    health-check-url-path: /actuator/health/
+    metadata-map:
+      user:
+        name: ${spring.security.user.name}
+        password: ${spring.security.user.password}
   client:
+    registry-fetch-interval-seconds: 5
     service-url:
       defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    ROOT: info
